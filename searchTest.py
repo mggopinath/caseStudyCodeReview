@@ -24,14 +24,14 @@ elif option =='2':
 	rgval=input("Enter your String Value: ")
 	rgstart = timeit.default_timer()
 	print("Search Results:")
-	search_match(rgval)
+	search_regx(rgval)
 	rgend = timeit.default_timer()
 	print("Simple String Match Elaspse Time ---->",rgend-rgstart,"ms")
 elif option =='3':
 	ival=input("Enter your String Value: ")
 	istart = timeit.default_timer()
 	print("Search Results:")
-	search_match(ival)
+	search_str_index(ival)
 	iend = timeit.default_timer()
 	print("Simple String Match Elaspse Time ---->",iend-istart,"ms")
 else:
