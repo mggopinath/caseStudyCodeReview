@@ -78,6 +78,7 @@ def search_str_index(indexInput):
 					index=line.find(indexInput, index)
 					if index == -1:
 						break
+					index += len(indexInput)
 					if index > -1:
 						indexcount = indexcount + 1
 			search_desc[word] = indexcount
