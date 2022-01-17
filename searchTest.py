@@ -26,14 +26,14 @@ elif option =='2':
 	print("Search Results:")
 	search_regx(rgval)
 	rgend = timeit.default_timer()
-	print("Simple String Match Elaspse Time ---->",rgend-rgstart,"ms")
+	print("Regular Expression String Match Elaspse Time ---->",rgend-rgstart,"ms")
 elif option =='3':
 	ival=input("Enter your String Value: ")
 	istart = timeit.default_timer()
 	print("Search Results:")
 	search_str_index(ival)
 	iend = timeit.default_timer()
-	print("Simple String Match Elaspse Time ---->",iend-istart,"ms")
+	print("Index String Search Match Elaspse Time ---->",iend-istart,"ms")
 else:
 	print("Please Select the Valid Option --> Program exit")
 	
